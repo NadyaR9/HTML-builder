@@ -21,7 +21,6 @@ const path = require('path');
                     } else {
                         console.log(`${filename} - ${extname} - ${(stats.size/1024).toFixed(2)}kb`)
                     }
-
                 }
             })
         };
