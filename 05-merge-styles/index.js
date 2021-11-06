@@ -12,9 +12,10 @@ async function mergeStyles(src, dist) {
         });
         let styles = ''
         for (const file of files) {
-            fileExtend = path.extname(file.name);
+
             try {
                 st = await fsPromises.stat(path.join(src, file.name));
+                let fileExtend = path.extname(file.name);
                 if (st.isFile() && fileExtend === '.css') {
                     console.log(file.name);
                     try {
