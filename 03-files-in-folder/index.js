@@ -3,7 +3,6 @@ const fs = require('fs')
 const path = require('path');
 (async function () {
     try {
-        console.log(path.join(__dirname, 'secret-folder'))
         const files = await fsPromises.readdir(path.join(__dirname, 'secret-folder'), {
             encoding: 'utf-8',
             withFileTypes: true

@@ -54,3 +54,4 @@ async function copyFolder(src, dist) {
 
 }
 copyFolder(src, dist);
+
